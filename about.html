@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from html.tonatheme.com/2021/Governlia/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 May 2024 07:47:59 GMT -->
+<!-- Mirrored from html.tonatheme.com/2021/Governlia/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 May 2024 07:47:09 GMT -->
 <head>
 <meta charset="utf-8">
 <title>Melton Residency</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
-<!-- Responsive File -->
+<!-- Responsive File -->    
 <link href="assets/css/responsive.css" rel="stylesheet">
 <!-- Color File -->
 <link href="assets/css/color.css" rel="stylesheet">
+<link href="assets/css/new-ticker.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&amp;family=Merriweather:ital@0;1&amp;display=swap" rel="stylesheet">
 
 
 <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+ 
 </head>
 
 <body>
@@ -45,32 +47,30 @@
             <div class="auto-container">
                 <div class="inner-container">
                     <div class="left-column">
-                        <div class="text"><i class="icon-news"></i><a href="#">Latest City News</a> Coronavirus: Restrictions eased in parts of some islands</div>                        
-                    </div>
-                    <div class="right-column">
-                        <div class="phone"><a href="tel:+18526105599"><i class="fas fa-phone-volume"></i>+1 852-610-5599</a></div>
-                        <ul class="header-top-menu">
-                            <li><a href="#">City Tour</a></li>
-                            <li><a href="#">Join Us</a></li>
-                            <li><a href="#">Get In Touch</a></li>
-                        </ul>
-                        <ul class="social-icon">
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                        </ul>
-                    </div>
+
+
+                        <div class="ticker-wrap">
+                            <div class="ticker-heading">Latest News</div>
+                            <div class="ticker">
+                            <div class="ticker__item">Letterpress chambray brunch.</div>
+                            <div class="ticker__item">Vice mlkshk crucifix beard chillwave meditation hoodie asymmetrical Helvetica.</div>
+                            <div class="ticker__item">Ugh PBR&B kale chips Echo Park.</div>
+                            <div class="ticker__item">Gluten-free mumblecore chambray mixtape food truck. </div>
+                            </div>
+                        </div>  
+                        
+
+                    </div> 
                 </div>
             </div>
         </div>
 
         <!-- Header Upper -->
-        <div class="header-upper background-color">
+        <div class="header-upper background-color upper-header-height">
             <div class="auto-container">
                 <div class="inner-container">
                     <!--Logo-->
-                    <div class="logo-box">
+                    <div class="logo-box header-logo">
                         <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" style="width: 200px;height: auto;"></a></div>
                     </div>
                     <!--Nav Box-->
@@ -84,7 +84,14 @@
                                 <ul class="navigation">
                                     <li class="dropdown"><a href="index.html">Home</a> 
                                     </li>
-                                    <li><a href="about.html">About Us</a></li>  
+                                    <li><a href="about.html">About us</a></li>   
+                                    <li class="dropdown"><a href="#">Services</a>
+                                        <ul> 
+                                            <div class="dropdown-btn"><span class="fa fa-angle-right"></span></div></li>
+                                            <li><a href="events.html">Events</a></li>
+                                            <li><a href="newsUpdates.html">News & Updates</a></li>
+                                        </ul>
+                                    <div class="dropdown-btn"><span class="fa fa-angle-right"></span></div></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
@@ -104,12 +111,12 @@
         <!--End Header Upper-->
 
         <!-- Sticky Header  -->
-        <div class="sticky-header">
+        <div class="sticky-header upper-header-height background-color">
             <div class="header-upper">
                 <div class="auto-container">
                     <div class="inner-container">
                         <!--Logo-->
-                        <div class="logo-box">
+                        <div class="logo-box header-logo">
                             <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" style="width: 200px;height: auto;"></a></div>
                         </div>
                         <!--Nav Box-->
@@ -141,7 +148,10 @@
             <nav class="menu-box">
                 <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-				<!--Social Links-->
+				<div id="navbarSupportedContent" class="collapse navbar-collapse show clearfix">
+
+                </div>
+                <!--Social Links-->
 				<div class="social-links">
 					<ul class="clearfix">
 						<li><a href="#"><span class="fab fa-twitter"></span></a></li>
@@ -196,16 +206,18 @@
     </section>
 
     <!-- About section -->
-    <section class="about-section style-two">
-        <div class="auto-container">            
+    <section class="about-section">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <div class="big-title">Melton City</div>
+                <div class="sub-title">City With Equity - Efficiency - Opportunity</div>
+                <h2>Infrastructures, Wide Spaces <br> & Flawless Attractions</h2>
+            </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="sec-title mb-30">
-                        <h2>Clean Infrastructures <br> & Flawless Attractions</h2>
-                    </div>
-                    <div class="content-block">
-                        <h3>Voice Of The People: <strong> Governlia</strong></h3>
-                        <div class="text">Veniam quis nostrud exercitation llamco laboris nis aliquip conseqa rure dolorn repreh derit luptate velit excepteur ocaecats aliquip ex duis aute irure dolor in reprehenderit voluptate velitey  cillum dolore ipsum dolor consectetur. </div>
+                <div class="col-lg-5">
+                    <div class="content-block wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <h3>A Place of Possibility<strong> Milton, Canada</strong></h3>
+                        <div class="text">Let’s Talk Milton is our online community engagement platform. Follow and participate in engagement opportunities to help shape projects, policies and initiatives in your community. Share your ideas!</div>
                         <ul class="list">
                             <li>Improving all types of opportunities </li>
                             <li>Quick solutions for daily problems</li>
@@ -213,232 +225,64 @@
                             <li>Community that grows larger</li>
                         </ul>
                         <div class="bottom-content">
-                            <div class="text">For Any Help, Questions <br> or Suggestions, Contact Us</div>
-                            <ul class="contact-link">
-                                <li><a href="tel:+1(345)20678"><i class="icon-phone"></i></a></li>
-                                <li><a href="mailto:munciple@example.net"><i class="icon-envelope"></i></a></li>
-                                <li><a href="contact.html"><i class="icon-placeholder"></i></a></li>
-                            </ul>
+                            <div class="text">For Any Help, Questions <br> or Suggestions, Please</div><br>
+                            <div class="link-btn"><a href="./contact.html" class="theme-btn btn-style-one"><span>Contact Us</span></a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="image-block">
+                <div class="col-lg-7">
+                    <div class="image-block wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="row">
                             <div class="col-lg-6 column">
-                                <div class="image"><img src="assets/images/resource/image-28.jpg" alt=""></div>
-                                <div class="image"><img src="assets/images/resource/image-29.jpg" alt=""></div>
+                                <div class="image"><img src="assets/images/resource/image-1.jpg" alt=""></div>
+                                <div class="image"><img src="assets/images/resource/image-2.jpg" alt=""></div>
                             </div>
                             <div class="col-lg-6 column">
-                                <div class="image"><img src="assets/images/resource/image-30.jpg" alt=""></div>
+                                <div class="image"><img src="assets/images/resource/image-3.jpg" alt=""></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Funfacts Section -->
-    <section class="funfacts-section mb-0" style="background-image: url(assets/images/background/bg-1.jpg);">
-        <div class="auto-container">
-            <div class="row">
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><span class="icon-area"></span></div>
-                        </div>
-                        <div class="content">
-                            <div class="text">Area Covered</div>
-                            <div class="count-outer count-box">
-                                <span class="count-text" data-speed="3000" data-stop="790.3">0</span><span>km²</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><span class="icon-people"></span></div>
-                        </div>
-                        <div class="content">
-                            <div class="text">Peoples Lived</div>
-                            <div class="count-outer count-box">
-                                <span class="count-text" data-speed="3000" data-stop="5.39">0</span><span>million</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><span class="icon-language"></span></div>
-                        </div>
-                        <div class="content">
-                            <div class="text">Languages Spoken</div>
-                            <div class="count-outer count-box">
-                                <span>Over</span><span class="count-text" data-speed="3000" data-stop="460">0</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section mb-30">
-        <div class="auto-container">
-            <div class="row no-gutters">
-                <div class="col-xl-3 col-lg-6 feature-block">
-                    <div class="inner-box">
-                        <div class="icon"><span class="icon-train"></span></div>
-                        <div class="content">
-                            <div class="category"><a href="#">Transportation</a></div>
-                            <h3>Find a Public Transport <br> or Locate Parking</h3>
-                        </div>
-                        <div class="overlay" style="background-image: url(assets/images/resource/image-16.jpg);">
-                            <div class="category"><a href="#">Transportation</a></div>
-                            <h3>Find a Public Transport <br> or Locate Parking</h3>
-                            <div class="text">Dolore magna aliquat minim veniay quis <br> exercit ullamco laboris aliquip...</div>
-                            <div class="link-btn"><a href="#"><i class="icon-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 feature-block">
-                    <div class="inner-box">
-                        <div class="icon"><span class="icon-pets-2"></span></div>
-                        <div class="content">
-                            <div class="category"><a href="#">Wildlife Animals</a></div>
-                            <h3>Search for an Animal or <br> Pet for Adoption </h3>
-                        </div>
-                        <div class="overlay" style="background-image: url(assets/images/resource/image-16.jpg);">
-                            <div class="category"><a href="#">Wildlife Animals</a></div>
-                            <h3>Search for an Animal or <br> Pet for Adoption</h3>
-                            <div class="text">Dolore magna aliquat minim veniay quis <br> exercit ullamco laboris aliquip...</div>
-                            <div class="link-btn"><a href="#"><i class="icon-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 feature-block">
-                    <div class="inner-box">
-                        <div class="icon"><span class="icon-laptop"></span></div>
-                        <div class="content">
-                            <div class="category"><a href="#">Utility Services</a></div>
-                            <h3>Pay any Utility Bill Easily <br> by Access Account</h3>
-                        </div>
-                        <div class="overlay" style="background-image: url(assets/images/resource/image-16.jpg);">
-                            <div class="category"><a href="#">Utility Services</a></div>
-                            <h3>Pay any Utility Bill Easily <br> by Access Account</h3>
-                            <div class="text">Dolore magna aliquat minim veniay quis <br> exercit ullamco laboris aliquip...</div>
-                            <div class="link-btn"><a href="#"><i class="icon-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 feature-block">
-                    <div class="inner-box">
-                        <div class="icon"><span class="icon-report"></span></div>
-                        <div class="content">
-                            <div class="category"><a href="#">Municipal Court</a></div>
-                            <h3>Did any Violation? Submit <br> Ticket(s) or Pay Tax</h3>
-                        </div>
-                        <div class="overlay" style="background-image: url(assets/images/resource/image-16.jpg);">
-                            <div class="category"><a href="#">Transportation</a></div>
-                            <h3>Find a Public Transport <br> or Locate Parking</h3>
-                            <div class="text">Dolore magna aliquat minim veniay quis <br> exercit ullamco laboris aliquip...</div>
-                            <div class="link-btn"><a href="#"><i class="icon-arrow"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    </section> 
+ 
     <!-- Mayor Message section -->
     <section class="mayor-message-section">
         <div class="auto-container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="image"><img src="assets/images/resource/image-4.jpg" alt=""></div>
+                    <div class="image"><img src="assets/images/resource/image-4.png" alt=""></div>
                 </div>
                 <div class="col-lg-7">
                     <div class="content-block pl-lg-5">
                         <div class="sec-title">
-                            <div class="big-title">Governlia</div>
-                            <div class="sub-title">City With Equity - Efficiency - Opportunity</div>
-                            <h2>Message From City Mayor</h2>
+                            <div class="big-title">Krantz</div>
+                            <div class="sub-title">Welcome Message from Mayor Gordon Krantz</div>
+                            <h2>Hello, Milton Neighbors</h2>
                         </div>
                         <div class="row">
                             <div class="col-lg-8">
-                                <h3><span>Meet</span> Tim Brexton</h3>
-                                <h4>Elected since August 25, 2017</h4>
+                                <h4><span>Meet</span> Gordon Krantz</h4> 
                                 <div class="text">
-                                    <p>Hiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    <p>Excepteur sint occaecat cupidatat non proident suntin culpa qui officia deserunt mollit anim idm est laborum. Sed perspiciatis und omnis iste natus error sit voluptatem accusantium.</p>
-                                </div>
-                                <div class="sign"><img src="assets/images/resource/sign.png" alt=""></div>
-                                <div class="designation">The City Mayor</div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="funfacts">
-                                    <div class="column counter-column">
-                                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                            <div class="content">
-                                                <div class="text">Years Of <br>Experience</div>
-                                                <div class="count-outer count-box">
-                                                    <span class="count-text" data-speed="3000" data-stop="25">0</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column counter-column">
-                                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                            <div class="content">
-                                                <div class="text">programs <br> for the city</div>
-                                                <div class="count-outer count-box">
-                                                    <span class="count-text" data-speed="3000" data-stop="80">0</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column counter-column">
-                                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                            <div class="content">
-                                                <div class="text">Approved <br> covid-19 centers</div>
-                                                <div class="count-outer count-box">
-                                                    <span class="count-text" data-speed="3000" data-stop="63">0</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    <p>I'm excited to welcome you to Milton Residents Association website. This is where we come together, share vital information, and support one another as a community...</p>  
+                                </div> 
+                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Video section -->
-    <section class="video-section" style="background-image: url(assets/images/background/bg-3.jpg);">
-        <div class="auto-container">
-            <h2><strong>Experience The Great</strong> <br> Countryside And Enjoy Hiking</h2>
-            <div class="text">Eabore ipsum dolor sit amet consectetur adipisicing tempor</div>
-            <div class="video-btn"><a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="overlay-link play-now ripple" data-fancybox="gallery" data-caption=""><span class="fas fa-play"></span> </a></div>
-        </div>
-    </section>
+ 
 
     <!-- Team section -->
     <section class="team-section">
         <div class="auto-container">
             <div class="sec-title style-two text-center">
-                <div class="big-title">Governlia</div>
+                <div class="big-title">Melton</div>
                 <div class="sub-title">City With Equity - Efficiency - Opportunity</div>
-                <h2>Upcoming City Events</h2>
+                <h2>Civic Leadership: The Mayor's Vision for Progress and Prosperity</h2>
             </div>
             <div class="row">
                 <div class="col-xl-4 col-md-6 team-block">
@@ -541,70 +385,58 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 team-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="assets/images/resource/team-5.jpg" alt=""></div>
-                        <div class="content">
-                            <h4>Harry Arther</h4>
-                            <div class="designation">Council Member</div>                          
-                        </div>
-                        <div class="overlay">
-                            <div class="content-two">
-                                <h4>Harry Arther</h4>
-                                <div class="designation">Council Member</div>
-                                <ul class="contact-info">
-                                    <li><a href="tel:+1(852)6105599"><i class="fas fa-phone"></i>+ 1 (852) 610 5599</a></li>
-                                    <li><a href="tel:+1(852)6105599"><i class="fas fa-envelope-open"></i>+ 1 (852) 610 5599</a></li>
-                                </ul>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linked-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 team-block">
-                    <div class="inner-box">
-                        <div class="image"><img src="assets/images/resource/team-1.jpg" alt=""></div>
-                        <div class="content">
-                            <h4>Jack W. Oliver</h4>
-                            <div class="designation">Council Member</div>                          
-                        </div>
-                        <div class="overlay">
-                            <div class="content-two">
-                                <h4>Jack W. Oliver</h4>
-                                <div class="designation">Council Member</div>
-                                <ul class="contact-info">
-                                    <li><a href="tel:+1(852)6105599"><i class="fas fa-phone"></i>+ 1 (852) 610 5599</a></li>
-                                    <li><a href="tel:+1(852)6105599"><i class="fas fa-envelope-open"></i>+ 1 (852) 610 5599</a></li>
-                                </ul>
-                                <ul class="social-links">
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linked-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>            
         </div>
     </section>
 
-    <!-- CTA section -->
-    <section class="cta-section pt-0" style="background-image: url(assets/images/background/bg-10.jpg);">
-        <div class="auto-container">
-            <div class="content">
-                <h4>Luxe Street With Buildings Hotels & More ...</h4>
-                <h2>Best City Highlights & Attractions</h2>
-                <div class="text">Hiusmod tempor incididunt ut labore et dolore magna aliqua. Ut minim veniay quis nostrud <br> exercitation ullamco laboris nisi ut aliquip ex voluptate velit esse.</div>
-                <div class="link-btn"><a href="#" class="btn-style-one"><span>view details</span></a></div>
+    <!-- Funfacts Section -->
+    <section class="funfacts-section" style="background-image: url(assets/images/background/bg-1.jpg);">
+    <div class="auto-container">
+        <div class="row">
+            <!--Column-->
+            <div class="column counter-column col-lg-4 col-md-6">
+                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="icon-outer">
+                        <div class="icon"><span class="icon-area"></span></div>
+                    </div>
+                    <div class="content">
+                        <div class="text">Area Covered</div>
+                        <div class="count-outer count-box">
+                            <span class="count-text" data-speed="3000" data-stop="790.3">0</span><span>km²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Column-->
+            <div class="column counter-column col-lg-4 col-md-6">
+                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="icon-outer">
+                        <div class="icon"><span class="icon-people"></span></div>
+                    </div>
+                    <div class="content">
+                        <div class="text">Peoples Lived</div>
+                        <div class="count-outer count-box">
+                            <span class="count-text" data-speed="3000" data-stop="5.39">0</span><span>million</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Column-->
+            <div class="column counter-column col-lg-4 col-md-6">
+                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="icon-outer">
+                        <div class="icon"><span class="icon-language"></span></div>
+                    </div>
+                    <div class="content">
+                        <div class="text">satisfied customer</div>
+                        <div class="count-outer count-box">
+                            <span>Over</span><span class="count-text" data-speed="3000" data-stop="4500+">0</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!-- Main  Footer -->

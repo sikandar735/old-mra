@@ -588,7 +588,7 @@ img {
 
 .main-header .auto-container {
     max-width: 100%;
-    padding: 0 90px;
+    padding: 0px 55px;
 }
 
 .main-header.header-style-one {
@@ -1379,10 +1379,10 @@ img {
 
 .mobile-menu .nav-logo {
     position: relative;
-    padding: 30px 25px;
+    padding: 0px 50px;
     text-align: left;
     margin-bottom: 100px;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .mobile-menu-visible {
@@ -6375,7 +6375,7 @@ blockquote cite {
 /* Contact Info Section */
 .contact-info-section {
     position: relative;
-    padding: 0 0 90px;
+    padding: 0 0 10px;
 }
 .contact-info-section .contact-info {
     position: relative;
@@ -6459,5 +6459,71 @@ blockquote cite {
 }
 
 .background-color{
-    background-image: linear-gradient(315deg, #000000 0%, #414141f7 74%) !important;
+    background-image: linear-gradient(315deg, #000000ed 0%, #414141b5 74%) !important;
 }
+
+.upper-header-height{
+    max-height: 100px !important;
+}
+
+.header-logo{
+    max-width: 150px !important;
+    height: auto;
+}
+
+
+/* background-color: #182b3a;
+background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%); */
+
+
+.department-section {
+    background-image: url(../image/bg/department-bg-1.jpg);
+    /* padding-bottom: 120px; */
+    margin-top: -20px;
+}
+
+.department-section .department-section-inner {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 55px;
+}
+
+.row-gutter-y-40 {
+    --bs-gutter-y: 40px;
+}
+
+.department-card {
+    text-align: center;
+    padding: 0px 39px;
+    position: relative;
+}
+
+.department-card-icon {
+    font-size: 35px;
+    color: #2982e5;
+    height: 80px;
+    width: 80px;
+    background-color: var(--thm-white);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+    line-height: 90px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: all 500ms;
+}
+
+.department-card-icon a {
+    color: #2982e5;
+}
+
+.department-card-content h5 > a {
+    color: inherit;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.department-icon:hover {
+  color: #2a2d30;
+}
+
