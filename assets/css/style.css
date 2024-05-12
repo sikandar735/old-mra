@@ -838,7 +838,7 @@ img {
     font-size: 22px;
 }
 
-.main-header .nav-outer {
+.main-header .nav-outer  {
     position: relative;
     z-index: 1;
     display: flex;
@@ -859,7 +859,7 @@ img {
     border-radius: 50%;
 }
 
-.main-header .nav-outer .main-menu {
+.main-header .nav-outer  .main-menu {
     position: relative;
 }
 
@@ -1336,7 +1336,7 @@ img {
 
 ***/
 
-.nav-outer .mobile-nav-toggler {
+.nav-outer  .mobile-nav-toggler {
     position: relative;
     width: 50px;
     height: 50px;
@@ -6527,3 +6527,10 @@ background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%); */
   color: #2a2d30;
 }
 
+.logo-header-size{
+    margin-top: -43px !important;
+}
+
+/* .nav-tab-section{
+    margin-top: -30px !important;
+} */
