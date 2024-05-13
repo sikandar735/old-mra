@@ -2263,6 +2263,11 @@ img {
     margin-bottom: 30px;
 }
 
+.main-footer .footer-top .logo {
+    height: 200px !important;
+    width: 200px !important;
+}
+
 .main-footer .footer-top .logo:before {
     position: absolute;
     content: '';
@@ -6534,3 +6539,12 @@ background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%); */
 /* .nav-tab-section{
     margin-top: -30px !important;
 } */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 44%) !important;
+}
